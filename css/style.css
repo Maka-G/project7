@@ -6,7 +6,7 @@ body {
 .bg{
 	height: 80vh;
 	width: 70vw;
-	margin: 5% auto;
+	margin: 8.5% auto;
 	background: url('../img/bg-01.png');
 	background-size: cover;
 	position: relative;
@@ -33,6 +33,49 @@ body {
 	animation: movingcar 1s linear infinite;
 
 }
+/* header*/
+header{
+	position: fixed;
+	display: inline-block;
+    background-color: white;
+    opacity: 0.7;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+li{
+	display: inline-block;
+	padding: 30px;
+}
+	
+
+.nav-li::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #082F67; 
+	transition: width .3s
+
+} 
+.nav-li:hover::after{
+	width: 100%;
+	transition: width 0.3s;
+	
+}
+.navbar{
+	display: inline-block;
+	margin-left: 170px;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	font-size: 24px;
+	color: #082F67;
+}
+
+
 /*animation*/
 @keyframes moveR{
 	100%{ transform: translateX(-2950px); }
